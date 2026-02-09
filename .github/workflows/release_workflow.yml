@@ -70,3 +70,4 @@ jobs:
     if:  always() && !cancelled() && !failure() && github.event.inputs.github_release == 'true'
     uses: ./.github/workflows/stage_release.yml
     secrets: inherit
+    
